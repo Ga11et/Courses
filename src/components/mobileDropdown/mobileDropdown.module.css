@@ -106,3 +106,24 @@
 .menuItem:hover > .svg > path{
     fill: black;
 }
+
+@media screen and (max-width: 843px) {
+    .popup{
+        height: 100%;
+    }
+    .links{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 22px;
+        height: unset;
+    }
+    .links > a{
+        padding-bottom: 18px;
+    }
+    .courses{
+        grid-template-columns: 1fr;
+    }
+    .goBack{
+        margin: 5px 0 20px 0;
+    }
+}
