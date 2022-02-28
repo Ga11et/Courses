@@ -1,0 +1,158 @@
+.course{
+    position: relative;
+    width: 100%;
+}
+.header{ 
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    width: 100%;
+    display: flex;
+    width: calc(100% - 42px);
+}
+.image{
+    display: block;
+    width: 100%;
+    height: 173px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+.detail{
+    background-color: white;
+    padding: 8px 11px;
+    color: black;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13.4px;
+    border-radius: 24px;
+    margin: 0 13px 13px 0;
+    width: fit-content;
+}
+.content{
+    padding: 0px 27px;
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+}
+.heading > h3{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+.svg{
+    margin-right: 9px;
+}
+.svgCoin{
+    margin-right: 9px;
+}
+.score{
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+}
+.score > span{
+    color: var(--grey_35);
+    white-space: break-spaces;
+}
+.describtion{
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+.item{
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14.6px;
+}
+.item > span{
+    font-weight: 400;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.left{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+}
+.right{
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.3px;
+}
+.link{
+    padding: 21px 0;
+    display: block;
+    background-color: var(--blue);
+    border-radius: 0 0 14px 14px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .header{
+        flex-direction: column;
+    }
+    .heading{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heading > h3{
+        padding-bottom: 9px;
+    }
+    .price{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left{
+        padding-bottom: 8px;
+        font-size: 14px;
+    }
+    .right{
+        font-size: 13px;
+    }
+    .svgCoin{
+        width: 13px;
+    }
+}
+
+@media screen and (max-width: 843px) {
+    .heading{
+        flex-direction: row;
+        align-items: center;
+    }
+    .heading > h3{
+        padding-bottom: 0;
+    }
+    .price{
+        flex-direction: row;
+        align-items: center;
+    }
+    .left{
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+    .right{
+        font-size: 15px;
+    }
+    .svgCoin{
+        width: unset;
+    }
+}

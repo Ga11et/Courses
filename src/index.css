@@ -1,0 +1,26 @@
+:root{
+  --blue: #0075FF;
+  --lightGreen: rgba(67, 197, 158, 0.19);
+  --green: #43C59E;
+  --grey: #DCDCDC;
+  --grey_secondary: #F7F7F7;
+  --grey_35: rgba(0, 0, 0, 0.35);
+  --grey_46: rgba(0, 0, 0, 0.46);
+  --white: rgba(0, 0, 0, 0.03);
+  font-family: 'Montserrat';
+}
+*, *::after, *::before{
+  margin: 0;
+  box-sizing: border-box;
+}
+::placeholder{
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 400;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

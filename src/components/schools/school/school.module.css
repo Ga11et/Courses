@@ -1,0 +1,11 @@
+.school{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107px;
+    border: 1px solid var(--grey);
+    border-radius: 13px;
+}
+.school:hover{
+    cursor: pointer;
+}

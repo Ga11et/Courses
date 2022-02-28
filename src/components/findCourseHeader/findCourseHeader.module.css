@@ -1,0 +1,85 @@
+.findCourse{
+    display: grid;
+    color: black;
+    grid-template-columns: 1fr 1fr;
+}
+.heading{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 68px;
+    padding-bottom: 20px;
+    padding-top: 85px;
+}
+.paragraph{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 35px;
+}
+.forButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 110px;
+}
+.text{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18.6px;
+    width: 170px;
+    padding-left: 20px;
+}
+.text > span{
+    color: var(--blue);
+}
+.forImage{
+    position: relative;
+    width: 755px;
+    z-index: -1;
+}
+.image{
+    position: absolute;
+}
+
+@media screen and (max-width: 1280px) {
+    .forImage{
+        width: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading{
+        font-size: 44px;
+        line-height: 51.5px;
+        width: 414px;
+    }
+    .paragraph{
+        line-height: 22.8px;
+        width: 414px;
+    }
+}
+@media screen and (max-width: 834px) {
+    .findCourse {
+        grid-template-columns: unset;
+        padding: 0 20px;
+    }
+    .heading{
+        padding-top: 40px;
+        width: 100%;
+    }
+    .paragraph{
+        width: 100%;
+    }
+    .image{
+        position: unset;
+    }
+    .image > img{
+        width: 100%;
+    }
+    .forButton{
+        padding-bottom: 25px;
+    }
+    .forButton > button{
+        padding: 21px 4vw;
+    }
+}
