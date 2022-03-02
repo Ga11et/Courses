@@ -7,6 +7,7 @@
   --grey_35: rgba(0, 0, 0, 0.35);
   --grey_46: rgba(0, 0, 0, 0.46);
   --white: rgba(0, 0, 0, 0.03);
+  --red: #F40000;
   font-family: 'Montserrat';
 }
 *, *::after, *::before{

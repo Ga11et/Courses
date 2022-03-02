@@ -24,3 +24,7 @@ export type blogType = {
     text: string
     link: string
 }
+export type pathItemType = {
+    text: string
+    moveTo: string
+}

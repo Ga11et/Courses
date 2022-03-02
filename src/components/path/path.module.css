@@ -1,0 +1,33 @@
+.pathContainer{
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 22.8px;
+    font-weight: 400;
+    align-items: center;
+}
+.item{
+    padding-right: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.item:hover{
+    text-decoration: underline;
+}
+.item > svg{
+    margin-right: 13px;
+    transform: rotate(-90deg);
+}
+.item__end{
+    color: var(--blue);
+}
+.item__end:hover{
+    text-decoration: none;
+    cursor: unset;
+}
+.item__end > svg > path{
+    fill: var(--blue);
+}

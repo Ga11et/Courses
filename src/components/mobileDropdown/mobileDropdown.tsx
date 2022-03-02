@@ -57,7 +57,7 @@ export const MobileDropdown: FC<MobileDropdownPropsType> = ({  }) => {
                         <div className={css.directions}>
                             {mainMenu.map( el => <div key={el.id} className={css.menuItem}
                                 onClick={() => setPopupActiveMenu(el.id)}
-                            >
+                                >
                                 <div>{el.insideText}</div>
                                 <DropdownSVG className={css.svg} />
                             </div> )

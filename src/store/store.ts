@@ -1,4 +1,5 @@
 import findCourseReducer from './reducers/findCourseReducer';
+import stocksReducer from './reducers/stocksReducer';
 import headerReducer from './reducers/headerReducer';
 import mainReducer from './reducers/mainReducer';
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
@@ -8,7 +9,8 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 const rootReduser = combineReducers({
     mainReducer,
     headerReducer,
-    findCourseReducer
+    findCourseReducer,
+    stocksReducer
 })
 
 export const setupStore = () => {

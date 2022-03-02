@@ -1,0 +1,71 @@
+.skillboxContainer{
+    border-radius: 31px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--grey);
+}
+.circle{
+    position: absolute;
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 859px;
+    height: 859px;
+    z-index: 0;
+    bottom: -155px;
+    right: 50%;
+}
+.content{
+    z-index: 1;
+    padding: 44px 54px 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 27px;
+    padding-top: 27px; 
+    color: white;
+    width: 325px;
+}
+.bottom{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 44.5px;
+    text-transform: uppercase;
+    color: white;
+}
+.outlet{
+    display: inline-block;
+    background-color: var(--red);
+    padding: 12px 24px 12px 22px;
+    border-radius: 62px;
+    margin-top: 10px;
+}
+.link{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 27px 43px;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 31px 0;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.link > svg{
+    transform: rotate(-90deg) scale(1.5);
+    margin-left: 17px;
+}
+.link > svg > path{
+    fill: white;
+}
