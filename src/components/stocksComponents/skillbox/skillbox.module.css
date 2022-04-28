@@ -1,4 +1,5 @@
 .skillboxContainer{
+    height: 473px;
     border-radius: 31px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -32,6 +33,7 @@
     color: white;
     width: 325px;
 }
+
 .bottom{
     font-size: 25px;
     font-weight: 600;
@@ -68,4 +70,89 @@
 }
 .link > svg > path{
     fill: white;
+}
+.image{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1280px) {
+    .skillboxContainer{
+        height: 415px;
+    }
+    .circle{
+        bottom: -80px;
+        left: -350px;
+    }
+    .top > svg{
+        width: auto;
+        height: 32px;
+    }
+    .text{
+        font-size: 15px;
+        line-height: 21px;
+        width: auto;
+    }
+    .bottom{
+        font-size: 18px;
+    }
+    .outlet{
+        font-size: 16px;
+    }
+    .content{
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 843px) {
+    .circle{
+        display: none;
+    }
+    .top > svg > g > path{
+        fill: black;
+    }
+    .skillboxContainer{
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+        border: 1px solid var(--grey);
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .text{
+        width: 235px;
+        text-align: center;
+        padding-top: 10px;
+        color: black;
+    }
+    .discount{
+        color: black;
+        padding-top: 20px;
+    }
+    .image{
+        display: none;
+    }
+    .link{
+        padding: 27px 0;
+        border-radius: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .content{
+        padding-right: 54px;
+    }
 }

@@ -31,3 +31,9 @@
 .item__end > svg > path{
     fill: var(--blue);
 }
+
+@media screen and (max-width: 843px) {
+    .pathContainer{
+        margin: 0 20px;
+    }
+}

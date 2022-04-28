@@ -19,3 +19,27 @@
     width: 727px;
     text-align: center;
 }
+
+@media screen and (max-width: 1280px) {
+    .headingContainer{
+        align-items: flex-start;
+    }
+    .heading{
+        font-size: 32px;
+        padding-bottom: 0;
+    }
+    .text{
+        text-align: start;
+    }
+}
+@media screen and (max-width: 843px) {
+    .headingContainer{
+        padding: 80px 20px;
+    }
+    .heading{
+        font-size: 28px;
+    }
+    .text{
+        width: unset;
+    }
+}

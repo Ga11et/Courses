@@ -1,7 +1,6 @@
 import { FC } from "react"
 import css from './stocks.module.css'
 import { Path } from "../../components/path/path"
-import { pathItemType } from "../../store/models/models"
 import { Header } from "../../components/stocksComponents/header/header"
 import { useAppSelector } from "../../hooks/hooks"
 import { Skillbox } from "../../components/stocksComponents/skillbox/skillbox"
