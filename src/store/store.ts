@@ -1,3 +1,4 @@
+import TestPageReducer from './reducers/testPageReducer';
 import findCourseReducer from './reducers/findCourseReducer';
 import stocksReducer from './reducers/stocksReducer';
 import headerReducer from './reducers/headerReducer';
@@ -10,7 +11,8 @@ const rootReduser = combineReducers({
     mainReducer,
     headerReducer,
     findCourseReducer,
-    stocksReducer
+    stocksReducer,
+    TestPageReducer
 })
 
 export const setupStore = () => {

@@ -4,6 +4,7 @@ import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
 import { FindCoursePage } from './pages/findCourse/findCourse';
 import { Stocks } from './pages/stocks/stocks';
+import { TestPage } from './pages/testPage/testPage';
 
 type AppPropsType = {
 
@@ -16,6 +17,7 @@ const App: FC<AppPropsType> = ({ }) => {
       <Routes>
         <Route path='/findcourse' element={<FindCoursePage />} />
         <Route path='/stocks' element={<Stocks />} />
+        <Route path='/test' element={<TestPage />} />
         <Route path='*' element={<div>Redirect to /findcourse</div>} />
       </Routes>
       <Footer />
