@@ -1,0 +1,59 @@
+.itemContainer{
+    position: relative;
+    height: 334px;
+    margin: 80px 90px; 
+    border: 1px solid var(--grey);
+    border-radius: 19px;
+}
+.qNumber{
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 9px;
+    padding: 17px 21px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+.heading{
+    padding: 38px 48px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600px;
+}
+.label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 0 22px 48px;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 400;
+}
+.checkbox{
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+.button{
+    padding: 22px 35px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    background-color: var(--blue);
+    border-radius: 9px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: 48px;
+    bottom: 30px;
+}
+.button:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--blue_hover);
+}

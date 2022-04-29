@@ -1,5 +1,6 @@
 :root{
   --blue: #0075FF;
+  --blue_hover: #0077ffc2;
   --lightGreen: rgba(67, 197, 158, 0.19);
   --green: #43C59E;
   --green_11: #43C59E1C;
@@ -9,7 +10,7 @@
   --grey_46: rgba(0, 0, 0, 0.46);
   --white: rgba(0, 0, 0, 0.03);
   --red: #F40000;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
 }
 *, *::after, *::before{
   margin: 0;

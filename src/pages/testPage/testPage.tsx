@@ -1,8 +1,10 @@
-import { FC } from "react"
+import { FC, useState } from "react"
 import { Path } from "../../components/path/path"
 import { useAppSelector } from "../../hooks/hooks"
 import css from './testPage.module.css'
 import { ReactComponent as DropdownSVG } from '../../assets/main/dropdown.svg'
+import { TestItem } from "./testItem/testItem"
+import { Form, Formik } from "formik"
 
 type TestPagePropsType = {
     
@@ -10,6 +12,7 @@ type TestPagePropsType = {
 export const TestPage: FC<TestPagePropsType> = ({  }) => {
 
     const pages = useAppSelector( state => state.TestPageReducer.path)
+    const [activeQuestion, setActiveQuestion] = useState(1)
 
     return <main className={css.testPageContainer}>
         <Path pages={pages} />
@@ -30,5 +33,17 @@ export const TestPage: FC<TestPagePropsType> = ({  }) => {
                 </div>
             </div>
         </div>
+        <Formik
+            initialValues={{question1: ''}}
+            onSubmit={(values) => alert(JSON.stringify(values))}
+        >
+            <Form>
+                <TestItem answer1="Да" answer2="Нет" id={activeQuestion} 
+                    question="Вы любите контролировать других людей и вести учет?" 
+                />
+            </Form>
+
+        </Formik>
+        
     </main>
 }
