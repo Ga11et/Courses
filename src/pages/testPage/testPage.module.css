@@ -59,6 +59,11 @@
     border: 1px solid var(--blue);
     background-color: var(--blue);
 }
+.left:hover, .right:hover{
+    cursor: pointer;
+    background-color: var(--blue_hover);
+    transition: 0.3s;
+}
 .left > svg{
     transform: rotate(90deg) scale(1.5) translate(-1px, 0);
 }

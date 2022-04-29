@@ -12,7 +12,14 @@ type TestPagePropsType = {
 export const TestPage: FC<TestPagePropsType> = ({  }) => {
 
     const pages = useAppSelector( state => state.TestPageReducer.path)
+    const questions = useAppSelector( state => state.TestPageReducer.questions)
     const [activeQuestion, setActiveQuestion] = useState(1)
+
+    const initialValues = {
+        question1: 'Затрудняюсь ответить', question2: 'Затрудняюсь ответить', question3: 'Затрудняюсь ответить',
+        question4: 'Затрудняюсь ответить', question5: 'Затрудняюсь ответить', question6: 'Затрудняюсь ответить',
+        question7: 'Затрудняюсь ответить', question8: 'Затрудняюсь ответить', question9: 'Затрудняюсь ответить',
+    }
 
     return <main className={css.testPageContainer}>
         <Path pages={pages} />
@@ -28,18 +35,25 @@ export const TestPage: FC<TestPagePropsType> = ({  }) => {
             </div>
             <div className={css.rightBottom}>
                 <div className={css.buttons}>
-                    <button className={css.left}><DropdownSVG className={css.svg} /></button>
-                    <button className={css.right}><DropdownSVG className={css.svg} /></button>
+                    <button className={css.left}
+                        onClick={() => setActiveQuestion((lastValue) => lastValue !=1 ? lastValue-1 : lastValue)}    
+                    ><DropdownSVG className={css.svg} /></button>
+                    <button className={css.right}
+                        onClick={() => setActiveQuestion((lastValue) => lastValue !=10 ? lastValue+1 : lastValue)}    
+                    ><DropdownSVG className={css.svg} /></button>
                 </div>
             </div>
         </div>
         <Formik
-            initialValues={{question1: ''}}
-            onSubmit={(values) => alert(JSON.stringify(values))}
+            initialValues={initialValues}
+            onSubmit={(values) => {
+                activeQuestion === 10 && alert(JSON.stringify(values))
+            }}
         >
             <Form>
-                <TestItem answer1="Да" answer2="Нет" id={activeQuestion} 
-                    question="Вы любите контролировать других людей и вести учет?" 
+                <TestItem 
+                    content={questions[activeQuestion-1]}
+                    buttonHandler={setActiveQuestion}
                 />
             </Form>
 

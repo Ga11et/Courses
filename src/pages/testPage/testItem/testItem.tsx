@@ -1,14 +1,17 @@
 import { Field } from "formik"
 import { FC } from "react"
+import { questionItemType } from "../../../store/models/models"
 import css from './testItem.module.css'
 
 type TestItemPropsType = {
-    id: number
-    question: string
-    answer1: string
-    answer2: string
+    content: questionItemType
+
+    buttonHandler: (value: number) => void
 }
-export const TestItem: FC<TestItemPropsType> = ({ question, answer1, answer2, id }) => {
+export const TestItem: FC<TestItemPropsType> = ({ content, buttonHandler }) => {
+
+    const {question, id, answer1, answer2} = content
+
     return <>
         <div className={css.itemContainer}>
             <span className={css.qNumber}>{id} / 10</span>
@@ -31,7 +34,9 @@ export const TestItem: FC<TestItemPropsType> = ({ question, answer1, answer2, id
                 />
                 Затрудняюсь ответить
             </label>
-            <button className={css.button}>далее</button>
+            <button className={css.button} 
+                onClick={() =>  id != 10 && setTimeout(() => buttonHandler(id+1), 300)}
+            >далее</button>
         </div>
     </>
 }

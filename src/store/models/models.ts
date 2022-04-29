@@ -28,3 +28,9 @@ export type pathItemType = {
     text: string
     moveTo: string
 }
+export type questionItemType = {
+    id: number
+    question: string
+    answer1: string
+    answer2: string
+}
