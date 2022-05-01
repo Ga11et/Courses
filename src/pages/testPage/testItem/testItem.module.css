@@ -1,7 +1,5 @@
 .itemContainer{
-    position: relative;
     height: 334px;
-    margin: 80px 90px; 
     border: 1px solid var(--grey);
     border-radius: 19px;
 }

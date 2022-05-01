@@ -1,3 +1,29 @@
+@keyframes testItemSlideToLeft {
+    0%{
+        transform: scale(1) translateX(0);
+    }
+    100%{
+        transform: scale(0.7) translateX(-1300px);
+    }
+}
+@keyframes testItemSlideFromRight {
+    0%{
+        transform: scale(0.7) translateX(1300px);
+    }
+    100%{
+        transform: scale(1) translateX(0);
+    }
+}
+@keyframes testItemApear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 .testPageContainer{
     width: 1280px;
     padding: 0 55px;
@@ -64,6 +90,11 @@
     background-color: var(--blue_hover);
     transition: 0.3s;
 }
+.left:disabled, .right:disabled{
+    cursor: default;
+    opacity: 0.5;
+    transition: 0.3s;
+}
 .left > svg{
     transform: rotate(90deg) scale(1.5) translate(-1px, 0);
 }
@@ -75,4 +106,45 @@
 }
 .right > svg > path{
     fill: white;
+}
+.form{
+    position: relative;
+    margin: 80px 90px; 
+}
+.testItemBefore{
+    transform: scale(0.7) translateX(-1300px);
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+.testItemAfter{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transform: scale(0.7) translateX(1300px);
+}
+.testItemCenter{
+    position: relative;
+}
+.goOut{
+    animation: testItemApear 200ms forwards reverse;
+}
+.swipeToLeft{
+    animation: testItemSlideToLeft 1000ms forwards;
+}
+.swipeFromRight{
+    animation: testItemSlideFromRight 1000ms forwards;
+}
+.swipeFromLeft{
+    animation: testItemSlideToLeft 1000ms forwards reverse;
+}
+.swipeToRight{
+    animation: testItemSlideFromRight 1000ms forwards reverse;
+}
+.empty{
+    visibility: hidden;
+}
+.apear{
+    animation: testItemApear 600ms forwards;
 }

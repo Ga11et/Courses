@@ -5,15 +5,17 @@ import css from './testItem.module.css'
 
 type TestItemPropsType = {
     content: questionItemType
+    className?: string
 
     buttonHandler: (value: number) => void
 }
-export const TestItem: FC<TestItemPropsType> = ({ content, buttonHandler }) => {
+export const TestItem: FC<TestItemPropsType> = ({ className = '', content, buttonHandler }) => {
 
     const {question, id, answer1, answer2} = content
+    console.log('>>> ' + id)
 
     return <>
-        <div className={css.itemContainer}>
+        <div className={`${css.itemContainer} ${className}`}>
             <span className={css.qNumber}>{id} / 10</span>
             <h2 className={css.heading}>{question}</h2>
             <label className={css.label}>
