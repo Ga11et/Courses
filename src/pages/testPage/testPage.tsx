@@ -83,28 +83,28 @@ export const TestPage: FC<TestPagePropsType> = ({  }) => {
                 <TestItem
                     className={`${css.testItemBefore} ${testItemsAddClasses.left}`}
                     content={questions[activeQuestion-2]}
-                    buttonHandler={setActiveQuestion}
+                    buttonHandler={rightButtonHandler}
                 /> :
                 <TestItem
                     className={`${css.testItemBefore} ${css.empty}`}
                     content={{answer1:'', answer2:'', id:0, question:''}}
-                    buttonHandler={setActiveQuestion}
+                    buttonHandler={rightButtonHandler}
                 />}
                 <TestItem
                     className={`${css.testItemCenter} ${testItemsAddClasses.center}`}
                     content={questions[activeQuestion-1]}
-                    buttonHandler={setActiveQuestion}
+                    buttonHandler={rightButtonHandler}
                 />
                 {activeQuestion !== 10 ?
                 <TestItem
                     className={`${css.testItemAfter} ${testItemsAddClasses.right}`}
                     content={questions[activeQuestion]}
-                    buttonHandler={setActiveQuestion}
+                    buttonHandler={rightButtonHandler}
                 /> :
                 <TestItem
                     className={`${css.testItemBefore} ${css.empty}`}
                     content={{answer1:'', answer2:'', id:0, question:''}}
-                    buttonHandler={setActiveQuestion}
+                    buttonHandler={rightButtonHandler}
                 />}
             </Form>
 

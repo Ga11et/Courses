@@ -7,7 +7,7 @@ type TestItemPropsType = {
     content: questionItemType
     className?: string
 
-    buttonHandler: (value: number) => void
+    buttonHandler: () => void
 }
 export const TestItem: FC<TestItemPropsType> = ({ className = '', content, buttonHandler }) => {
 
@@ -37,7 +37,7 @@ export const TestItem: FC<TestItemPropsType> = ({ className = '', content, butto
                 Затрудняюсь ответить
             </label>
             <button className={css.button} 
-                onClick={() =>  id != 10 && setTimeout(() => buttonHandler(id+1), 300)}
+                onClick={() => buttonHandler()}
             >далее</button>
         </div>
     </>
