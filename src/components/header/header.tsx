@@ -20,7 +20,7 @@ export const Header: FC<HeaderPropsType> = ({  }) => {
                 <li className={css.menu__item}><Dropdown insideText="Все курсы" /></li>
                 <li className={css.menu__item}><Link to={'./test'}>Тест на профессию</Link></li>
                 <li className={css.menu__item}><Link to={'./stocks'}>Акции</Link></li>
-                <li className={css.menu__item}><a href="/">Отзывы</a></li>
+                <li className={css.menu__item}><Link to={'./reviews'}>Отзывы</Link></li>
             </ol>
             <div className={css.mobileMenu}>
                 <MobileDropdown />

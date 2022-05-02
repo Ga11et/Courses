@@ -34,3 +34,12 @@ export type questionItemType = {
     answer1: string
     answer2: string
 }
+export type schoolItemContentType = {
+    id: number
+    schoolName: string
+    countCurses: number
+    rating: number
+    countRatings: number
+    description: string
+    countReviews: number
+}
