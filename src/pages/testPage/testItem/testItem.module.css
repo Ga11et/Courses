@@ -19,7 +19,8 @@
     padding: 38px 48px;
     font-size: 20px;
     line-height: 24px;
-    font-weight: 600px;
+    font-weight: 600;
+    width: 80%;
 }
 .label{
     display: flex;
@@ -54,4 +55,34 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: var(--blue_hover);
+}
+
+@media screen and (max-width: 1280px){
+    .label{
+        padding-bottom: 12px;
+    }
+    .heading{
+        height: 124px;
+    }
+}
+@media screen and (max-width: 843px){
+    .itemContainer{
+        height: unset;
+    }
+    .qNumber{
+        right: 0;
+        top: -80px;
+    }
+    .heading{
+        width: 100%;
+        height: unset;
+        padding: 28px;
+    }
+    .label{
+        padding-left: 28px;
+    }
+    .button{
+        position: unset;
+        margin: 10px 28px 25px;
+    }
 }
