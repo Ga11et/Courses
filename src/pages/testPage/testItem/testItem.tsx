@@ -12,7 +12,6 @@ type TestItemPropsType = {
 export const TestItem: FC<TestItemPropsType> = ({ className = '', content, buttonHandler }) => {
 
     const {question, id, answer1, answer2} = content
-    console.log('>>> ' + id)
 
     return <>
         <div className={`${css.itemContainer} ${className}`}>

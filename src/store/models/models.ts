@@ -43,3 +43,10 @@ export type schoolItemContentType = {
     description: string
     countReviews: number
 }
+export type schoolReviewType = {
+    id: number
+    reviewerName: string
+    isPositive: boolean
+    date: string
+    reviewContent: string
+}

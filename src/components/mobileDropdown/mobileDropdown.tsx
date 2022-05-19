@@ -4,6 +4,7 @@ import {ReactComponent as MenuSVG} from '../../assets/header/menu.svg'
 import {ReactComponent as MenuExitSVG} from '../../assets/header/menuExit.svg'
 import {ReactComponent as DropdownSVG} from '../../assets/main/dropdown.svg'
 import { useAppSelector } from "../../hooks/hooks"
+import { Link } from "react-router-dom"
 
 type MobileDropdownPropsType = {
     
@@ -31,9 +32,9 @@ export const MobileDropdown: FC<MobileDropdownPropsType> = ({  }) => {
                 <div className={css.popup}>
                     <div className={css.content}>
                         <div className={css.links}>
-                            <a href="/">Тест на профессию</a>
-                            <a href="/">Акции</a>
-                            <a href="/">Отзывы</a>
+                            <Link to={'./test'}>Тест на профессию</Link>
+                            <Link to={'./stocks'}>Акции</Link>
+                            <Link to={'./reviews'}>Отзывы</Link>
                         </div>
                         {popupActiveMenu ?
                             <div className={css.coursesContainer}>

@@ -1,3 +1,4 @@
+import SkillboxReviewsPageReducer from './reducers/skillboxReviewsPageReducer';
 import ReviewsPageReducer from './reducers/reviewsPageReducer';
 import TestPageReducer from './reducers/testPageReducer';
 import findCourseReducer from './reducers/findCourseReducer';
@@ -14,7 +15,8 @@ const rootReduser = combineReducers({
     findCourseReducer,
     stocksReducer,
     TestPageReducer,
-    ReviewsPageReducer
+    ReviewsPageReducer,
+    SkillboxReviewsPageReducer
 })
 
 export const setupStore = () => {

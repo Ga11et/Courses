@@ -9,6 +9,9 @@
     font-size: 64px;
     border-radius: 24px 24px 0 0;
 }
+.header:hover{
+    cursor: pointer;
+}
 .content{
     padding: 20px 30px 30px;
     border-left: 1px solid var(--grey);
@@ -74,6 +77,9 @@
     line-height: 20px;
     font-weight: 500;
     border-radius: 0 0 24px 24px;
+}
+.footer:hover{
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1280px) {

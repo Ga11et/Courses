@@ -4,6 +4,7 @@ import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
 import { FindCoursePage } from './pages/findCourse/findCourse';
 import { ReviewsPage } from './pages/reviews/reviewsPage';
+import { SkillboxReviewPage } from './pages/schoolReview/schoolReviewPage';
 import { Stocks } from './pages/stocks/stocks';
 import { TestPage } from './pages/testPage/testPage';
 
@@ -16,10 +17,11 @@ const App: FC<AppPropsType> = ({ }) => {
     <BrowserRouter >
       <Header />
       <Routes>
-        <Route path='/findcourse' element={<FindCoursePage />} />
-        <Route path='/stocks' element={<Stocks />} />
-        <Route path='/test' element={<TestPage />} />
-        <Route path='/reviews' element={<ReviewsPage />} />
+        <Route path='findcourse' element={<FindCoursePage />} />
+        <Route path='stocks' element={<Stocks />} />
+        <Route path='test' element={<TestPage />} />
+        <Route path='reviews' element={<ReviewsPage />} />
+        <Route path='reviews/skillbox' element={<SkillboxReviewPage />} />
         <Route path='*' element={<div>Redirect to /findcourse</div>} />
       </Routes>
       <Footer />
