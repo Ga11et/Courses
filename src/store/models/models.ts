@@ -49,4 +49,7 @@ export type schoolReviewType = {
     isPositive: boolean
     date: string
     reviewContent: string
+    starsCount: number
+    likesCount: number
+    dislikesNumber: number
 }

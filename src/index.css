@@ -9,8 +9,11 @@
   --grey_secondary: #F7F7F7;
   --grey_35: rgba(0, 0, 0, 0.35);
   --grey_46: rgba(0, 0, 0, 0.46);
+  --grey_40: rgba(0, 0, 0, 0.40);
   --white: rgba(0, 0, 0, 0.03);
   --red: #F40000;
+  --spanRedText: #EF476F;
+  --spanRedBackground:  rgba(239, 71, 111, 0.11);
   font-family: 'Montserrat', sans-serif;
 }
 *, *::after, *::before{

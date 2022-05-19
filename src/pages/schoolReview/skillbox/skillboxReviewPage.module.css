@@ -1,0 +1,73 @@
+.schoolReviewContainer{
+    width: 1280px;
+    padding: 0 55px 100px;
+}
+.header{
+    height: 130px;
+    border-bottom: 1px solid var(--grey);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.header > h1{
+    font-size: 50px;
+    line-height: 68px;
+    font-weight: 700;
+}
+.right{
+    font-weight: 500;
+}
+.right > span{
+    display: inline-block;
+    color: var(--grey_35);
+    white-space: break-spaces;
+}
+.svg{
+    margin-right: 9px;
+}
+.content{
+    position: relative;
+}
+.content > p{
+    max-width: 600px;
+    padding: 30px 0;
+}
+.countReviews{
+    display: inline-block;
+    padding: 13px 27px;
+    margin-left: 30px;
+    border-radius: 24px;
+    background-color: var(--green_11);
+    color: var(--green);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+.linkToSchool{
+    display: inline-block;
+    padding: 21px 79px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    border-radius: 13px;
+    transition: 300ms;
+    text-decoration: none;
+}
+.linkToSchool:hover{
+    background-color: var(--blue_hover);
+    transition: 300ms;
+}
+.reviewsContainer{
+    margin: 100px 0 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}

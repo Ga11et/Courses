@@ -4,7 +4,7 @@ import { Footer } from './components/footer/footer';
 import { Header } from './components/header/header';
 import { FindCoursePage } from './pages/findCourse/findCourse';
 import { ReviewsPage } from './pages/reviews/reviewsPage';
-import { SkillboxReviewPage } from './pages/schoolReview/schoolReviewPage';
+import { SkillboxReviewPage } from './pages/schoolReview/skillbox/skillboxReviewPage';
 import { Stocks } from './pages/stocks/stocks';
 import { TestPage } from './pages/testPage/testPage';
 
