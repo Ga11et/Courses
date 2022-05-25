@@ -22,7 +22,7 @@ const App: FC<AppPropsType> = ({ }) => {
         <Route path='test' element={<TestPage />} />
         <Route path='reviews' element={<ReviewsPage />} />
         <Route path='reviews/skillbox' element={<SkillboxReviewPage />} />
-        <Route path='*' element={<div>Redirect to /findcourse</div>} />
+        <Route path='*' element={<FindCoursePage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
