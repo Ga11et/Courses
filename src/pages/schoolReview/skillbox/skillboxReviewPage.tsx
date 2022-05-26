@@ -5,6 +5,7 @@ import { ReactComponent as StarSVG } from '../../../assets/findCourse/star.svg'
 import css from './skillboxReviewPage.module.css'
 import { Link } from "react-router-dom"
 import { ReviewItem } from "../reviewItem/reviewItem"
+import { ReviewForm } from "./reviewForm/reviewForm"
 
 type SkillboxReviewPagePropsType = {
 
@@ -45,5 +46,6 @@ export const SkillboxReviewPage: FC<SkillboxReviewPagePropsType> = ({ }) => {
         <div className={css.reviewsContainer}>
             {reviews.map( el => <ReviewItem reviewData={el} key={el.id} />)}
         </div>
+        <ReviewForm />
     </main>
 }

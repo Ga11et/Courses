@@ -1,0 +1,21 @@
+.starsContainer{
+    width: 120px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.starsContainer > svg{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.starsContainer > svg > path{
+    fill: transparent;
+    stroke: var(--grey);
+    stroke-width: 0.5px;
+}
+.starsContainer .filledStar > path{
+    fill: #FFE381;
+    stroke-width: 0;
+}
